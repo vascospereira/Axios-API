@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <meta charset="utf-8">
-    <title>Fetch and Axios API Tutorial</title>
-
+    <title>Axios</title>
 </head>
 <body>
-<h1>Axios API</h1>
-
+<h1>Axios In Action</h1>
 <button id="json-button">Get JSON</button>
 <button id="img-button">Get image</button>
 <button id="text-button">Get text</button>
 <button id="get-button">GET request</button>
 <button id="head-button">HEAD request</button>
-
 <br><br>
-
 <form action="#" id="myForm">
     <div>
         <label for="name">Name:</label>
@@ -32,20 +27,14 @@
     <button id="post-button" type="button">POST request</button>
     <br>
 </form>
-
 <br>
-
 <div id="container"></div>
-
 <p id="message"></p>
-
 <script src="js/main.js"></script>
-
 <script>
-
     /**
      * `app` is an object with properties, which in this case happen to be methods
-     *
+	 *
      * @type {Element}
      */
     document.getElementById('json-button').addEventListener('click', app.getJSON);
@@ -54,10 +43,7 @@
     document.getElementById('head-button').addEventListener('click', app.headRequest);
     document.getElementById('get-button').addEventListener('click', app.getRequest);
     document.getElementById('post-button').addEventListener('click', app.postRequest);
-
 </script>
-
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
-
 </html>
